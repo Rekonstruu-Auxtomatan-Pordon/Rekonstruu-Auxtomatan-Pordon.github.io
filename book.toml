@@ -1,0 +1,20 @@
+[book]
+title = "後付け自動ドア開発チーム"
+description = "後付け自動ドアのドキュメントリポジトリです。"
+authors = ["automatic-door-add-on"]
+language = "ja"
+multilingual = false
+src = "src"
+[build]
+build-dir = "docs"
+create-missing = false
+[output.html]
+mathjax-support = true
+preferred-dark-theme = "navy"
+
+[output.html.playground]
+editable = true
+copy-js = true
+line-numbers = true
+[output.html.print]
+enable = true
