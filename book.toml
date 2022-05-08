@@ -1,7 +1,7 @@
 [book]
-title = "後付け自動ドア開発チーム"
-description = "後付け自動ドアのドキュメントリポジトリです。"
-authors = ["automatic-door-add-on"]
+title = "開き戸自動化プロジェクトのドキュメント"
+description = "開き戸自動化プロジェクトのドキュメントリポジトリです。"
+authors = ["Rekonstruu-Auxtomatan-Pordonチーム"]
 language = "ja"
 multilingual = false
 src = "src"
