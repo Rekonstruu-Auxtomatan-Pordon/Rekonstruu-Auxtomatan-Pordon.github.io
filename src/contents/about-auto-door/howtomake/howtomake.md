@@ -2,18 +2,18 @@
 
 ## 開き戸自動化プロジェクトについて
 
-開き戸自動化プロジェクトはC++によって作られています。
+[Rekonstruu Auxtomatan Pordon](https://github.com/Rekonstruu-Auxtomatan-Pordon/Rekonstruu-Auxtomatan-Pordon) 通称「RAP」は開き戸を再構築して、自動化を図るツールを開発するためのプロジェクトです。Raspberry Pi 3台と[C++](https://isocpp.org/)言語にて成り立っています。
 
 ### 開き戸自動化プロジェクトのビルド方法
 
-この節では実際にgccを使い、本プロジェクトをビルドする方法について解説します。
+この節では実際に[g++](https://gcc.gnu.org/onlinedocs/gcc-11.3.0/libstdc++/manual/)を使い、本プロジェクトをビルドする方法について解説します。
 
 #### 依存ファイルのインストール
 
-本プロジェクトは、gcc11,make,pigpioによって成り立っています。
-gccはaptコマンドで普通にインストールすると古いバージョンが落ちるため、注意してください。
+本プロジェクトは、[g++-11](https://packages.debian.org/sid/g++-11),[make](https://packages.debian.org/bullseye/make),[pigpio](https://github.com/joan2937/pigpio)によって成り立っています。
+g++は[apt](https://tracker.debian.org/pkg/apt)コマンドで普通にインストールすると古いバージョンが落ちるため、注意してください。
 
-1. gcc-11のインストール
+1. gcc-11とg++-11のインストール
 
     ```shell
     sudo apt install gcc-11 g++-11
@@ -25,7 +25,7 @@ gccはaptコマンドで普通にインストールすると古いバージョ�
     sudo apt install build-essential
     ```
 
-3. gccコマンドを代替バージョンに切り替える
+3. gcc,g++コマンドを代替バージョンに切り替える
 
     ```shell
     sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 80 --slave /usr/bin/g++ g++ /usr/bin/g++-11 --slave /usr/bin/gcov gcov /usr/bin/gcov-11
@@ -33,7 +33,7 @@ gccはaptコマンドで普通にインストールすると古いバージョ�
     sudo update-alternatives --config g++
     ```
 
-4. gccのバージョンを確認する
+4. gcc,g++のバージョンを確認する
 
     ```shell
     gcc -v
@@ -70,10 +70,11 @@ gccはaptコマンドで普通にインストールすると古いバージョ�
 
 4. 生成したファイルを走らせる
 
-
 ### 開き戸自動化プロジェクトの回路の作り方
 
 ### 開き戸自動化プロジェクトの3dプリント
+
+### 開き戸自動化プロジェクトのRaspberry Piの配線
 
 ## 参考文献
 
