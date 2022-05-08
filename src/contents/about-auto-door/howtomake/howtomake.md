@@ -25,28 +25,21 @@ gccはaptコマンドで普通にインストールすると古いバージョ�
     sudo apt install build-essential
     ```
 
-3. gccのバージョンをgcc-11として代替する
-
-    ```shell
-    sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/gcc-11 11
-    sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 11
-    ```
-
-4. gccコマンドを代替バージョンに切り替える
+3. gccコマンドを代替バージョンに切り替える
 
     ```shell
     sudo update-alternatives --config gcc
     sudo update-alternatives --config g++
     ```
 
-5. gccのバージョンを確認する
+4. gccのバージョンを確認する
 
     ```shell
     gcc -v
     g++ -v
     ```
 
-6. gitをインストールする
+5. gitをインストールする
 
     ```shell
     sudo apt install git
