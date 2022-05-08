@@ -28,6 +28,7 @@ gccはaptコマンドで普通にインストールすると古いバージョ�
 3. gccコマンドを代替バージョンに切り替える
 
     ```shell
+    sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 80 --slave /usr/bin/g++ g++ /usr/bin/g++-11 --slave /usr/bin/gcov gcov /usr/bin/gcov-11
     sudo update-alternatives --config gcc
     sudo update-alternatives --config g++
     ```
@@ -73,3 +74,7 @@ gccはaptコマンドで普通にインストールすると古いバージョ�
 ### 開き戸自動化プロジェクトの回路の作り方
 
 ### 開き戸自動化プロジェクトの3dプリント
+
+## 参考文献
+
+[How to Install GCC Compiler on Ubuntu 22.04 LTS](https://www.linuxcapable.com/how-to-install-gcc-compiler-on-ubuntu-22-04-lts/)
