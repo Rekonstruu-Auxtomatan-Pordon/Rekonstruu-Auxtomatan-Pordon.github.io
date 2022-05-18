@@ -1,0 +1,41 @@
+site_name: 開き戸自動化プロジェクトのドキュメント
+site_description: 開き戸自動化プロジェクトのドキュメントリポジトリです。
+site_author: Rekonstruu-Auxtomatan-Pordonチーム
+site_url: https://rekonstruu-auxtomatan-pordon.github.io/
+
+repo_url: https://github.com/Rekonstruu-Auxtomatan-Pordon/Rekonstruu-Auxtomatan-Pordon.github.io
+repo_name: Rekonstruu-Auxtomatan-Pordon/Rekonstruu-Auxtomatan-Pordon.github.io
+
+docs_dir: 'docs'
+
+theme: 
+  name: 'material'
+  palette:
+    primary: blue
+    scheme: slate
+    accent: cyan
+  language: ja
+  features:
+    - content.code.annotate 
+    - codehilite
+    - navigation.expand
+    - navigation.instant
+  icon:
+    repo: fontawesome/brands/github 
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+      
+nav:
+  - このプロジェクトについて: README.md
+  - 1. 自動ドアについて:
+    - 1.1. 自動ドアについて: about-auto-door/howtomake/howtomake.md
+  - 2. 自動ドアの解説:
+    - 2.1 ソースコードの解説: description/description_of_code/main.md
+  - このサイトについて: このサイトについて.md
+plugins:
+  - git-revision-date
