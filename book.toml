@@ -11,6 +11,7 @@ create-missing = false
 [output.html]
 mathjax-support = true
 preferred-dark-theme = "navy"
+line-numbers = true
 
 [output.html.playground]
 editable = true
