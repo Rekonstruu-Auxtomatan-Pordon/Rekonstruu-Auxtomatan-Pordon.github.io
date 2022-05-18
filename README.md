@@ -2,32 +2,15 @@
 
 このリポジトリは開き戸自動化プロジェクト 「Rekonstruu-auxtomatan-pordon」通称「RAP」のドキュメントリポジトリです
 
-## セットアップ方法
+## ライセンス
 
-- [Rust](https://www.rust-lang.org/ja/tools/install)からインストーラーをダウンロードします。
-- インストーラーを実行すると、標準ではパスが通ります。
+ドキュメントサイトには、[mkdocs-material](https://github.com/squidfunk/mkdocs-material)
+を使用しています。[MITライセンス](https://github.com/squidfunk/mkdocs-material/blob/master/LICENSE)が採用されています。
 
-- コマンドプロンプトからmdbookをインストールします。
+サイトgitのリビジョンは、[mkdocs-git-revision-date-plugin](https://github.com/squidfunk/mkdocs-material)
+を使用しています。[MITライセンス](https://github.com/zhaoterryy/mkdocs-git-revision-date-plugin/blob/master/LICENSE)が採用されています。
 
-```shell
-cargo install mdbook
-```
+GithubActionsでチェックアウトするときには、[actions/checkout](https://github.com/actions/checkout)を使用しています。[MITライセンス](https://github.com/actions/checkout/blob/main/LICENSE)が採用されています。
 
-- リポジトリのルートディレクトリで、mdbookを起動します。
 
-```shell
-mdbook serve
-```
-
-- 標準だと、
-
-```url
-http://localhost:3000
-```
-
-で立ち上がります。
-
-## 使用したものについて
-
-- [mdBook](https://github.com/rust-lang/mdBook)はrustで作られた文章管理ツールです。
-- peaceiris様が作られた、[actions-mdbook](https://github.com/peaceiris/actions-mdbook)を使用しています。
+GithubActionsでpythonを使うときには、[actions/setup-python](https://github.com/actions/setup-python)を使用しています。[MITライセンス](https://github.com/actions/setup-python/blob/main/LICENSE)が採用されています。
