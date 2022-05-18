@@ -11,11 +11,18 @@ create-missing = false
 [output.html]
 mathjax-support = true
 preferred-dark-theme = "navy"
+copy-js = true
 line-numbers = true
+runnable = false
 
 [output.html.playground]
 editable = true
 copy-js = true
 line-numbers = true
+runnable = false
+
 [output.html.print]
 enable = true
+copy-js = true
+line-numbers = true
+runnable = false

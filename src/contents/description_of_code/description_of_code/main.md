@@ -10,7 +10,7 @@
 
 main.cppのソースコードを以下に示します。
 
-```cpp
+``` cpp
 #include "headers/stdafx.hpp"
 
 const int FRONT_DOOR_SENSOR 11
