@@ -10,6 +10,7 @@ docs_dir: 'docs'
 
 theme: 
   name: 'material'
+  custom_dir: docs/overrides
   palette:
     primary: blue
     scheme: slate
@@ -39,3 +40,5 @@ nav:
   - このサイトについて: このサイトについて.md
 plugins:
   - git-revision-date
+  - git-authors
+  
