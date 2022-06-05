@@ -10,13 +10,12 @@
 
 #### 依存ファイルのインストール
 
-本プロジェクトは、[g++-12](https://packages.debian.org/sid/g++-12),[make](https://packages.debian.org/bullseye/make),[pigpio](https://github.com/joan2937/pigpio)によって成り立っています。
-g++は[apt](https://tracker.debian.org/pkg/apt)コマンドで普通にインストールすると古いバージョンが落ちるため、注意してください。
+本プロジェクトは、[g++-10](https://packages.debian.org/sid/g++-10),[make](https://packages.debian.org/bullseye/make),[pigpio](https://github.com/joan2937/pigpio)によって成り立っています。
 
-1. gcc-11とg++-11のインストール
+1. gcc-10とg++-10のインストール
 
     ```shell
-    sudo apt install gcc-12 g++-12
+    sudo apt install gcc-10 g++-10
     ```
 
 2. build-essentialのインストール
@@ -24,23 +23,14 @@ g++は[apt](https://tracker.debian.org/pkg/apt)コマンドで普通にインス
     ```shell
     sudo apt install build-essential
     ```
-
-3. gcc,g++コマンドを代替バージョンに切り替える
-
-    ```shell
-    sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 80 --slave /usr/bin/g++ g++ /usr/bin/g++-12 --slave /usr/bin/gcov gcov /usr/bin/gcov-12
-    sudo update-alternatives --config gcc
-    sudo update-alternatives --config g++
-    ```
-
-4. gcc,g++のバージョンを確認する
+3. gcc,g++のバージョンを確認する
 
     ```shell
     gcc -v
     g++ -v
     ```
 
-5. gitをインストールする
+4. gitをインストールする
 
     ```shell
     sudo apt install git
